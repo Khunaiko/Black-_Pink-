@@ -60,13 +60,13 @@ const submitForm = async () => {
         })
 
         if (result.status == 201) {
-            console.log("ลงทะเบียนเรียบร้อยแล้วครับ")
+            console.log("ลงทะเบียนเรียบร้อยแล้วค่ะ")
             localStorage.setItem("user-info", JSON.stringify(result.data))
             console.log(result.data)
             console.log(JSON.stringify(result.data))
             router.push(state.redirectTo)
         } else {
-            console.log("ลงทะเบียนไม่เรียบร้อยแล้วครับ")
+            console.log("ลงทะเบียนไม่เรียบร้อยแล้วค่ะ")
         }
     } else {
         alert("Error, form submited!")
@@ -86,7 +86,7 @@ const submitForm = async () => {
                             class="card-img-top" alt="sign">
                     </div>
                     <div class="card-body">
-                        <p class="card-text text-end">สิ่งมหัศรรย์ของโลก 2024.</p>
+                        <p class="card-text text-end">Blackpink</p>
                     </div>
                 </div>
             </div>

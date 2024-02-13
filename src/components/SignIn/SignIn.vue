@@ -34,7 +34,7 @@ const submitForm = async () => {
     const result = await v$.value.$validate()
     if (result) {
 
-        const result = await axios.get(`https://json-server-vue3.onrender.com/users?email=${userForm.email}&password=${userForm.password}`)
+        const result = await axios.get(`https://black-pink1.onrender.com/users?email=${userForm.email}&password=${userForm.password}`)
         // console.log(result)
         if (result.status == 200 && result.data.length > 0) {
             localStorage.setItem("user-info", JSON.stringify(result.data[0]))
